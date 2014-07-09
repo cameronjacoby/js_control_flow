@@ -1,11 +1,22 @@
-var array = ['coding', 'onomatopoeia', 'javascript', 'ruby', 'circumlocution', 'pizza', 'oreos', 'ubiquitous'];
-var maxLength = 10;
-var newArray = [];
+var myWords = ['coding', 
+			'onomatopoeia', 
+			'javascript', 
+			'ruby', 
+			'circumlocution', 
+			'pizza', 
+			'oreos', 
+			'ubiquitous'
+			],
+	maxLength = 10; // can use the comma above to declare multiple varialbes at once (eliminates need for 'var' in front of maxLength)
 
-for (i = 0; i < array.length; i += 1) {
-	if (array[i].length > maxLength) {
-		newArray.push(array.splice(i, 1).toString());
+var filteredList = [];
+
+for (var i = 0, currentWord; i < myWords.length; i += 1) {
+	currentWord = myWords[i];
+
+	if (currentWord.length <= maxLength) {
+		filteredList.push(currentWord);
 	}
 }
 
-console.log(newArray);
+console.log('The filtered list is: ' + filteredList + '.');

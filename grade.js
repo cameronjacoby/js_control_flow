@@ -40,6 +40,7 @@ function assignGrade(score) {
 	}
 	else {
 		return 'not valid';
+	}
 }
 
 // testing the function
@@ -48,3 +49,30 @@ console.log('Your grade: ' + assignGrade(100));
 console.log('Your grade: ' + assignGrade(105)); // should return 'not valid'
 console.log('Your grade: ' + assignGrade(0));
 console.log('Your grade: ' + assignGrade(-28)); // should return 'not valid'
+
+
+// using switch
+
+var rawScore = 68;
+var score = Math.floor(rawScore / 10);
+
+switch(score) {
+	case 10:
+		console.log('A', rawScore);
+		break;
+	case 9:
+		console.log('A', rawScore);
+		break;
+	case 8:
+		console.log('B', rawScore);
+		break;
+	case 7:
+		console.log('C', rawScore);
+		break;
+	case 6:
+		console.log('D', rawScore);
+		break;
+	case 5:
+		console.log('F', rawScore);
+		break;
+}
