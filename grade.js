@@ -40,7 +40,6 @@ function assignGrade(score) {
 	}
 	else {
 		return 'not valid';
-	}
 }
 
 // testing the function
