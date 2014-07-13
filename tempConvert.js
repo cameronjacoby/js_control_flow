@@ -1,5 +1,5 @@
 function cToF(tempC) {
-	var tempF = tempC * (9 / 5) + 32;
+	var tempF = Math.round(tempC * (9 / 5) + 32);
 	console.log(tempC + "\xB0C is " + tempF + "\xB0F.");
 }
 

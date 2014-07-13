@@ -7,7 +7,7 @@ var myWords = ['coding',
 			'oreos', 
 			'ubiquitous'
 			],
-	maxLength = 10; // can use the comma above to declare multiple varialbes at once (eliminates need for 'var' in front of maxLength)
+	maxLength = 10;
 
 var filteredList = [];
 
